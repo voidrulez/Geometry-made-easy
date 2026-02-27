@@ -1,6 +1,9 @@
-import * as ScramjetMod from "@mercuryworkshop/scramjet";
+import { Scramjet } from "@mercuryworkshop/scramjet";
 
-const Scramjet = ScramjetMod.default || ScramjetMod.Scramjet || ScramjetMod;
+const sj = new Scramjet({
+  wasm: "/scramjet.wasm"
+});
 
-const sj = new Scramjet({});
-console.log("Scramjet initialized:", sj);
+sj.start().then(() => {
+  document.body.innerHTML += "<p>Scramjet started!</p>";
+});
