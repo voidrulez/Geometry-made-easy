@@ -1,0 +1,13 @@
+{
+  "name": "scramjet-site",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "vite build"
+  },
+  "dependencies": {
+    "@mercuryworkshop/scramjet": "2.0.0-alpha"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}
